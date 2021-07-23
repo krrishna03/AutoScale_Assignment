@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML App</title>
+</head>
+<body align="center">
+    Welcome!!!
+    <form  action='/getlist' method='get'>
+        <label class="label" for="zipcode">Zipcode:</label><br>
+        <input class="textsearch" type="text" id="zipcode" name="zipcode"><br>
+    
+        <label for="distance">Choose distance:</label><br>
+        <input class="textsearch" list="distances" name="distance" id="distance"><br>
+    
+        <datalist id="distances">
+            <option value="50">
+            <option value="100">
+        </datalist>
+        <button type='submit'>Search</button><br>
+    </form>
+    <p style="text-align:center">{{ message }}</p>
+</body>
+</html>
